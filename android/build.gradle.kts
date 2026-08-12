@@ -20,7 +20,8 @@ subprojects {
     project.evaluationDependsOn(":app")
 }
 
-// Fix JVM target mismatch across all subproject plugins (including dynamic_color)
+// Keep Java and Kotlin bytecode targets aligned across all Android subprojects,
+// including Flutter plugins such as dynamic_color.
 subprojects {
     plugins.withId("com.android.library") {
         configure<com.android.build.gradle.LibraryExtension> {
@@ -29,6 +30,11 @@ subprojects {
                 targetCompatibility = JavaVersion.VERSION_17
             }
         }
+    }
+
+    tasks.withType<org.gradle.api.tasks.compile.JavaCompile>().configureEach {
+        sourceCompatibility = JavaVersion.VERSION_17.toString()
+        targetCompatibility = JavaVersion.VERSION_17.toString()
     }
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
