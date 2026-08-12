@@ -126,6 +126,15 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Configure Android local properties
+        shell: bash
+        run: |
+          flutter_sdk="$(dirname "$(dirname "$(readlink -f "$(command -v flutter)")")")"
+          {
+            echo "sdk.dir=${ANDROID_HOME}"
+            echo "flutter.sdk=${flutter_sdk}"
+          } > android/local.properties
+
       # This project currently uses Flutter's debug signing config for release
       # builds. Configure a production keystore in Gradle before publishing to
       # Google Play; these APK/AAB files remain useful for GitHub distribution.
