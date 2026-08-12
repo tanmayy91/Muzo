@@ -81,7 +81,7 @@ class TopOnMuzoSection extends ConsumerWidget {
           ),
           const SizedBox(width: 8),
           Text(
-            'Top on Muzo',
+            'Top on Nerox Music',
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onSurface,
                   fontWeight: FontWeight.w700,

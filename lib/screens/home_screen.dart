@@ -122,7 +122,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
                   child: Text(
-                    'Easily bring your favorite Spotify playlists to Muzo. Head over to the Library to get started!',
+                    'Easily bring your favorite Spotify playlists to Nerox Music. Head over to the Library to get started!',
                     style: TextStyle(
                       fontSize: 13,
                       color: theme.colorScheme.onSurface.withValues(alpha: 0.8),
@@ -234,7 +234,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             // Quick Picks
             const SliverToBoxAdapter(child: QuickPicksSection()),
 
-            // Top on Muzo (Trending)
+            // Top on Nerox Music (Trending)
             const SliverToBoxAdapter(child: TopOnMuzoSection()),
 
             // Recently Played
@@ -265,7 +265,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Logo + Muzo branding
+          // Logo + Nerox Music branding
           Row(
             children: [
               ClipRRect(
@@ -278,7 +278,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               ),
               const SizedBox(width: 12),
               Text(
-                'Muzo',
+                'Nerox Music',
                 style: TextStyle(
                   color: Theme.of(context).colorScheme.onSurface,
                   fontSize: 24,

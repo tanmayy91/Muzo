@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo 1.webp" alt="Muzo Logo" width="140" height="140" />
+<img src="assets/logo 1.webp" alt="Nerox Music Logo" width="140" height="140" />
 
-# Muzo
+# Nerox Music
 
 **A powerful, privacy-focused YouTube Music client built with Flutter.**
 Ad-free · Offline · Synced Lyrics · Liquid Glass UI · Smart Cache
@@ -23,7 +23,7 @@ Ad-free · Offline · Synced Lyrics · Liquid Glass UI · Smart Cache
 
 ## 🚨 THIS REPOSITORY IS NO LONGER UPDATED 🚨
 
-### **Development has moved off GitHub. Muzo is now closed-source going forward.**
+### **Development has moved off GitHub. Nerox Music is now closed-source going forward.**
 ### **All active development and updates now ship exclusively through the Google Play Store.**
 
 | | |
@@ -42,7 +42,7 @@ Ad-free · Offline · Synced Lyrics · Liquid Glass UI · Smart Cache
 
 ---
 
-Muzo is a feature-rich, privacy-focused YouTube Music client built with Flutter, offering a premium ad-free experience with background playback, offline downloads, synchronized & karaoke lyrics, a modern Liquid Glass UI, smart background caching, Spotify playlist imports, a sleep timer, and community sharing — with or without an account.
+Nerox Music is a feature-rich, privacy-focused YouTube Music client built with Flutter, offering a premium ad-free experience with background playback, offline downloads, synchronized & karaoke lyrics, a modern Liquid Glass UI, smart background caching, Spotify playlist imports, a sleep timer, and community sharing — with or without an account.
 
 ---
 
@@ -83,14 +83,14 @@ Muzo is a feature-rich, privacy-focused YouTube Music client built with Flutter,
 - **Privacy First** — No login required; favorites, playlists, and history are stored locally by default.
 - **Zero-Wait Launch** — Parallel background loading for instant app startup.
 - **Ad-Free & Reliable** — RapidAPI and Metadata API Relay fallback (with Hugging Face bucket caching) guarantee playback.
-- **Share to Play** — Share links from YouTube or YouTube Music directly into Muzo.
-- **Muzo Deep Linking (`muzo://`)** — Full custom URL scheme to open/play songs (`muzo://s/<id>`), artists (`muzo://artist/<id>`), albums (`muzo://album/<id>`), and playlists (`muzo://playlist/<id>`).
+- **Share to Play** — Share links from YouTube or YouTube Music directly into Nerox Music.
+- **Nerox Music Deep Linking (`muzo://`)** — The existing `muzo://` scheme remains supported for backward compatibility when opening songs (`muzo://s/<id>`), artists (`muzo://artist/<id>`), albums (`muzo://album/<id>`), and playlists (`muzo://playlist/<id>`).
 
 ---
 
 ## ☕ Support & Donations
 
-If you love Muzo and want to support its ongoing development, consider donating — your support keeps the project alive and ad-free.
+If you love Nerox Music and want to support its ongoing development, consider donating — your support keeps the project alive and ad-free.
 
 > **Note:** All crypto addresses below accept **USDT** on their respective networks.
 
@@ -118,7 +118,7 @@ If you love Muzo and want to support its ongoing development, consider donating 
 
 ## 🌍 Localisation
 
-Muzo is fully localised into 20 languages, all at 100% coverage:
+Nerox Music is fully localised into 20 languages, all at 100% coverage:
 
 `en` `hi` `bn` `ar` `ru` `es` `fr` `de` `ja` `kk` `te` `as` `zh` `pa` `pl` `pt` `sr` `tr` `ur` `ko`
 
@@ -214,19 +214,41 @@ flutter run
 flutter build apk --split-per-abi
 ```
 
+### GitHub release automation
+
+The workflow at [`.github/workflows/release.yml`](.github/workflows/release.yml)
+builds and attaches the following artifacts to a GitHub Release:
+
+- **Windows:** `Nerox-Music-Setup.exe` installer
+- **Android:** split APKs and an App Bundle
+- **iOS:** an unsigned `Runner.xcarchive` archive
+
+Create and push a version tag to run it automatically:
+
+```bash
+git tag v3.9.0
+git push origin v3.9.0
+```
+
+The iOS archive is intentionally built with `--no-codesign`, so Apple signing
+certificates are not stored in GitHub Actions. It must be signed before device
+installation or App Store Connect upload. Android release builds currently use
+the project's existing debug signing configuration; configure a production
+keystore in `android/app/build.gradle.kts` before publishing to Google Play.
+
 ---
 
 ## 🙏 Acknowledgements
 
-Muzo wouldn't exist without the incredible work of these developers and projects:
+Nerox Music wouldn't exist without the incredible work of these developers and projects:
 
 ### YouTube Extraction
-Huge thanks to **[Hexer10](https://github.com/Hexer10)**, original author of [youtube_explode_dart](https://github.com/Hexer10/youtube_explode_dart) — the backbone of Muzo's YouTube streaming and metadata extraction — and to **[anandnet](https://github.com/anandnet)** for maintaining an up-to-date fork.
+Huge thanks to **[Hexer10](https://github.com/Hexer10)**, original author of [youtube_explode_dart](https://github.com/Hexer10/youtube_explode_dart) — the backbone of Nerox Music's YouTube streaming and metadata extraction — and to **[anandnet](https://github.com/anandnet)** for maintaining an up-to-date fork.
 
 ### Animesh (n-ce) — fast-saavn & ytify
 An enormous shoutout to **[Animesh (n-ce)](https://github.com/n-ce)**, creator of:
-- **[fast-saavn](https://github.com/n-ce/saavn)** — the blazing-fast, open JioSaavn API powering Muzo's music metadata, song details, and search.
-- **[ytify](https://github.com/n-ce/ytify)** — a beautifully minimal YouTube audio streaming web app that was a huge source of inspiration for Muzo's UI/UX and audio handling.
+- **[fast-saavn](https://github.com/n-ce/saavn)** — the blazing-fast, open JioSaavn API powering Nerox Music's music metadata, song details, and search.
+- **[ytify](https://github.com/n-ce/ytify)** — a beautifully minimal YouTube audio streaming web app that was a huge source of inspiration for Nerox Music's UI/UX and audio handling.
 
 ### Open-Source Libraries
 

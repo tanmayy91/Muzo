@@ -1,4 +1,4 @@
-// Copyright 2024 Muzo. All rights reserved.
+// Copyright 2024 Nerox Music. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause
 //
 // No-op Windows stub for receive_sharing_intent.

@@ -875,7 +875,7 @@ class _StandardPlayerState extends ConsumerState<StandardPlayer> {
   Widget _buildPlayingNextRow(BuildContext context, WidgetRef ref, int queueLength) {
     final audioHandler = ref.watch(audioHandlerProvider);
     final currentItem = ref.watch(currentMediaItemProvider).value;
-    final albumName = currentItem?.album ?? "Muzo";
+    final albumName = currentItem?.album ?? "Nerox Music";
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),

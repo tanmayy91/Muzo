@@ -357,7 +357,7 @@ class MuzoApiService {
         );
       }).toList();
     } catch (e) {
-      debugPrint('Error fetching Top on Muzo: $e');
+      debugPrint('Error fetching Top on Nerox Music: $e');
       return [];
     }
   }
@@ -638,7 +638,7 @@ class MuzoApiService {
         return albumDetails;
       } else {
         debugPrint(
-          'Muzo Album API Error: ${response.statusCode} - ${response.body}',
+          'Nerox Music Album API Error: ${response.statusCode} - ${response.body}',
         );
       }
     } catch (e) {
@@ -659,7 +659,7 @@ class MuzoApiService {
         return ArtistDetails.fromJson(data);
       } else {
         debugPrint(
-          'Muzo Artist API Error: ${response.statusCode} - ${response.body}',
+          'Nerox Music Artist API Error: ${response.statusCode} - ${response.body}',
         );
       }
     } catch (e) {
@@ -680,7 +680,7 @@ class MuzoApiService {
         return PlaylistDetails.fromJson(data);
       } else {
         debugPrint(
-          'Muzo Playlist API Error: ${response.statusCode} - ${response.body}',
+          'Nerox Music Playlist API Error: ${response.statusCode} - ${response.body}',
         );
       }
     } catch (e) {

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "Shashwat" "\0"
-            VALUE "FileDescription", "Muzo — Music & Community" "\0"
+            VALUE "FileDescription", "Nerox Music — Music & Community" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "Muzo" "\0"
+            VALUE "InternalName", "nerox_music" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 Shashwat. All rights reserved." "\0"
-            VALUE "OriginalFilename", "Muzo.exe" "\0"
-            VALUE "ProductName", "Muzo" "\0"
+            VALUE "OriginalFilename", "nerox_music.exe" "\0"
+            VALUE "ProductName", "Nerox Music" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

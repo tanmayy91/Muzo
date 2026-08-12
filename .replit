@@ -1,4 +1,4 @@
-modules = ["web", "java-graalvm22.3"]
+modules = ["web", "java-graalvm22.3", "python-base-3.13"]
 
 [nix]
 channel = "stable-25_05"

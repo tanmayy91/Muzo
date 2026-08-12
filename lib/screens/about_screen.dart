@@ -51,7 +51,7 @@ class AboutScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Muzo',
+                  'Nerox Music',
                   style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
                 ),
                 const SizedBox(height: 8),
@@ -82,7 +82,7 @@ class AboutScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 32),
                   child: Text(
-                    'Muzo is a powerful YouTube music client designed for a premium listening experience. Enjoy ad-free music, background playback, offline downloads, and a beautiful user interface.',
+                    'Nerox Music is a powerful YouTube music client designed for a premium listening experience. Enjoy ad-free music, background playback, offline downloads, and a beautiful user interface.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.grey[400],

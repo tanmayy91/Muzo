@@ -88,7 +88,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       }
 
       if (mounted) {
-        showGlassSnackBar(context, 'Welcome to Muzo!');
+        showGlassSnackBar(context, 'Welcome to Nerox Music!');
         // AuthGate watches authServiceProvider and will reactively
         // switch to MainLayout+HomeScreen now that auth token is set.
         if (Navigator.canPop(context)) {
@@ -222,7 +222,7 @@ class _IntroPage extends ConsumerWidget {
                 Image.asset('assets/logo.png', width: 52, height: 52),
                 const SizedBox(width: 14),
                 Text(
-                  'Muzo',
+                  'Nerox Music',
                   style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.w800,

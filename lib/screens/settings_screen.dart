@@ -347,7 +347,7 @@ class SettingsScreen extends ConsumerWidget {
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          'Muzo',
+                          'Nerox Music',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,

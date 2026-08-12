@@ -1,4 +1,4 @@
-// Copyright 2024 Muzo. All rights reserved.
+// Copyright 2024 Nerox Music. All rights reserved.
 // SPDX-License-Identifier: BSD-3-Clause
 //
 // A no-op Windows stub for the google_sign_in federated plugin.

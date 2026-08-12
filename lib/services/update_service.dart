@@ -142,7 +142,7 @@ class UpdateService {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
                     child: Text(
-                      'A new version of Muzo is available. Update now for the latest features and improvements.',
+                       'A new version of Nerox Music is available. Update now for the latest features and improvements.',
                       style: TextStyle(
                         fontSize: 13,
                         color: theme.colorScheme.onSurface.withValues(alpha: 0.8),

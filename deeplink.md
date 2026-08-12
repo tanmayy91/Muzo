@@ -1,6 +1,6 @@
-# Muzo Deep Link Reference
+# Nerox Music Deep Link Reference
 
-Muzo registers the custom URI scheme **`muzo://`** on Android. Any link in the form `muzo://<path>` opened on a device with Muzo installed will launch the app and navigate directly to the requested content.
+Nerox Music registers the existing custom URI scheme **`muzo://`** on Android. Any link in the form `muzo://<path>` opened on a device with Nerox Music installed will launch the app and navigate directly to the requested content.
 
 ---
 
@@ -112,7 +112,7 @@ Custom `muzo://` URIs work directly from HTML or JavaScript:
 
 ```html
 <!-- HTML anchor -->
-<a href="muzo://s/dQw4w9WgXcW">Open in Muzo</a>
+<a href="muzo://s/dQw4w9WgXcW">Open in Nerox Music</a>
 ```
 
 ```javascript
@@ -120,7 +120,7 @@ Custom `muzo://` URIs work directly from HTML or JavaScript:
 window.location.href = 'muzo://s/dQw4w9WgXcW';
 ```
 
-> **Ytify integration** — The Ytify web app ([ytify.pp.ua](https://ytify.pp.ua)) uses this to power its **"Open in Muzo"** button. Muzo shares content as `https://ytify.pp.ua/s/<id>` links; Ytify then offers a button that fires the corresponding `muzo://` URI.
+> **Ytify integration** — The Ytify web app ([ytify.pp.ua](https://ytify.pp.ua)) uses this to power its **"Open in Nerox Music"** button. Nerox Music shares content as `https://ytify.pp.ua/s/<id>` links; Ytify then offers a button that fires the corresponding `muzo://` URI.
 
 ---
 

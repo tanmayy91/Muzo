@@ -637,7 +637,7 @@ class _MainLayoutState extends ConsumerState<MainLayout>
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  'Muzo',
+                  'Nerox Music',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
                     fontSize: 22,

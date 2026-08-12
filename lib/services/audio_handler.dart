@@ -352,7 +352,7 @@ class AudioHandler {
         },
         tag: MediaItem(
           id: videoId,
-          album: "Muzo",
+          album: "Nerox Music",
           title: title,
           artist: artist,
           duration: duration,
@@ -424,7 +424,7 @@ class AudioHandler {
 
     final mediaItem = MediaItem(
       id: videoId,
-      album: 'Muzo',
+      album: 'Nerox Music',
       title: title,
       artist: artist,
       duration: duration,
@@ -555,7 +555,7 @@ class AudioHandler {
         },
         tag: MediaItem(
           id: videoId,
-          album: "Muzo",
+          album: "Nerox Music",
           title: title,
           artist: artist,
           duration: duration,

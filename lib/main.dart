@@ -72,7 +72,7 @@ class MyApp extends ConsumerWidget {
 
         return MaterialApp(
           navigatorKey: navigatorKey,
-          title: 'Muzo',
+          title: 'Nerox Music',
           debugShowCheckedModeBanner: false,
           theme: theme,
           // No builder wrapping here — MainLayout is only applied inside AuthGate

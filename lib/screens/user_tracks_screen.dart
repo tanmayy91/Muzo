@@ -188,7 +188,7 @@ class _UserTracksScreenState extends ConsumerState<UserTracksScreen> {
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            'Tap the button below or in the top right corner to upload your first audio track to Muzo!',
+                            'Tap the button below or in the top right corner to upload your first audio track to Nerox Music!',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.5),
@@ -604,7 +604,7 @@ class _UploadTrackDialogState extends ConsumerState<UploadTrackDialog> {
                               ),
                             ),
                             Text(
-                              'Share your music with Muzo',
+                              'Share your music with Nerox Music',
                               style: TextStyle(
                                 fontSize: 12,
                                 color: cs.onSurface.withValues(alpha: 0.45),

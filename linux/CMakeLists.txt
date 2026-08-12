@@ -125,7 +125,7 @@ if(NOT CMAKE_BUILD_TYPE MATCHES "Debug")
 endif()
 
 # =============================================================================
-# Muzo Desktop Integration (Linux XDG)
+# Nerox Music Desktop Integration (Linux XDG)
 # =============================================================================
 
 # Install .desktop file so the app appears in GNOME/KDE/XFCE launchers.
