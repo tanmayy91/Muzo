@@ -339,7 +339,7 @@ class SettingsScreen extends ConsumerWidget {
                           ),
                           child: ClipOval(
                             child: Image.network(
-                              'https://avatars.githubusercontent.com/Shashwat-CODING',
+                              'https://avatars.githubusercontent.com/tanmayy91',
                               fit: BoxFit.cover,
                               errorBuilder: (_, __, ___) => Image.asset('assets/logo.png', fit: BoxFit.contain),
                             ),
@@ -374,12 +374,12 @@ class SettingsScreen extends ConsumerWidget {
                 ListTile(
                   leading: _buildSettingIconBox(FluentIcons.person_24_regular, Colors.blue),
                   title: Text('Developer', style: TextStyle(color: Theme.of(context).colorScheme.onSurface, fontSize: 14, fontWeight: FontWeight.w500)),
-                  trailing: Text('Shashwat', style: TextStyle(color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6), fontSize: 13)),
+                  trailing: Text('Tanmay', style: TextStyle(color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6), fontSize: 13)),
                 ),
                 ListTile(
                   leading: _buildSettingIconBox(FluentIcons.code_24_regular, Colors.black87),
                   title: Text('Source Code', style: TextStyle(color: Theme.of(context).colorScheme.onSurface, fontSize: 14, fontWeight: FontWeight.w500)),
-                  subtitle: Text('View on GitHub', style: TextStyle(color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6), fontSize: 11)),
+                  subtitle: Text('Not open-sourced yet (but maybe soon)', style: TextStyle(color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6), fontSize: 11)),
                   trailing: Icon(
                     CupertinoIcons.chevron_right,
                     size: 13,
@@ -387,7 +387,7 @@ class SettingsScreen extends ConsumerWidget {
                   ),
                   onTap: () {
                     launchUrl(
-                      Uri.parse('https://github.com/Shashwat-CODING/Muzo'),
+                      Uri.parse('https://github.com'),
                       mode: LaunchMode.externalApplication,
                     );
                   },
