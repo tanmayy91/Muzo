@@ -32,7 +32,7 @@ class AudioHandler {
 
   final ValueNotifier<bool> isLofiModeNotifier = ValueNotifier(false);
 
-  static const platform = MethodChannel('com.shashwat.muzo/audio_effects');
+  static const platform = MethodChannel('com.tanmay.neroxmusic/audio_effects');
 
   double _userVolume = 1.0;
   

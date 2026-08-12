@@ -232,9 +232,19 @@ git push origin v3.9.0
 
 The iOS archive is intentionally built with `--no-codesign`, so Apple signing
 certificates are not stored in GitHub Actions. It must be signed before device
-installation or App Store Connect upload. Android release builds currently use
-the project's existing debug signing configuration; configure a production
-keystore in `android/app/build.gradle.kts` before publishing to Google Play.
+installation or App Store Connect upload.
+
+Android release signing uses four GitHub repository secrets:
+
+- `ANDROID_KEYSTORE_BASE64`
+- `ANDROID_KEYSTORE_PASSWORD`
+- `ANDROID_KEY_ALIAS`
+- `ANDROID_KEY_PASSWORD`
+
+The release workflow restores the same keystore on every run, so Android
+updates keep a stable signing identity. The keystore and `android/key.properties`
+are ignored and must never be committed. Local builds without those files
+continue to use the debug signing key.
 
 ---
 

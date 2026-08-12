@@ -29,7 +29,7 @@
         </receiver>
 
         <activity
-            android:name="com.shashwat.ytx.MainActivity"
+            android:name="com.tanmay.neroxmusic.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""

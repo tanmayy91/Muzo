@@ -1,15 +1,13 @@
-package com.shashwat.ytx
+package com.tanmay.neroxmusic
 
-import io.flutter.embedding.android.FlutterActivity
-import io.flutter.embedding.engine.FlutterEngine
-import io.flutter.plugin.common.MethodChannel
 import android.media.audiofx.EnvironmentalReverb
 import android.media.audiofx.Equalizer
-
 import com.ryanheise.audioservice.AudioServiceActivity
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : AudioServiceActivity() {
-    private val CHANNEL = "com.shashwat.muzo/audio_effects"
+    private val CHANNEL = "com.tanmay.neroxmusic/audio_effects"
     private var reverb: EnvironmentalReverb? = null
     private var equalizer: Equalizer? = null
 
@@ -35,7 +33,6 @@ class MainActivity : AudioServiceActivity() {
     private fun toggleReverb(sessionId: Int, enable: Boolean) {
         try {
             if (enable) {
-                // Initialize Equalizer to "wake up" the audio session (sometimes needed on Android)
                 if (equalizer == null) {
                     equalizer = Equalizer(0, sessionId)
                     equalizer?.enabled = true
@@ -43,10 +40,10 @@ class MainActivity : AudioServiceActivity() {
 
                 if (reverb == null) {
                     reverb = EnvironmentalReverb(0, sessionId)
-                    reverb?.decayTime = 2000 // 2 seconds
-                    reverb?.roomLevel = -1000 // -10 dB
-                    reverb?.reverbLevel = 0 // 0 dB
-                    reverb?.reverbDelay = 50 // 50 ms
+                    reverb?.decayTime = 2000
+                    reverb?.roomLevel = -1000
+                    reverb?.reverbLevel = 0
+                    reverb?.reverbDelay = 50
                     reverb?.enabled = true
                 } else {
                     reverb?.enabled = true
@@ -55,7 +52,7 @@ class MainActivity : AudioServiceActivity() {
                 reverb?.enabled = false
                 reverb?.release()
                 reverb = null
-                
+
                 equalizer?.enabled = false
                 equalizer?.release()
                 equalizer = null
